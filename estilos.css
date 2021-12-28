@@ -10,6 +10,7 @@ body {
     align-items: center;
     background:rgb(255, 255, 255);
     font-family: sans-serif;
+    padding: 25px;
 }
 
 .container-clock {
@@ -17,11 +18,31 @@ body {
 }
 
 .container-clock h1 {
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 400;
 }
 
 .container-clock p {
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .container-clock h1 {
+        font-size: 60px;
+    }
+
+    .container-clock p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-clock h1 {
+        font-size: 40px;
+    }
+
+    .container-clock p {
+        font-size: 10px;
+    }
 }
